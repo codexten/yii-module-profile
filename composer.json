@@ -3,6 +3,7 @@
   "type": "library",
   "description": "Profile module for yii 2.0 or higher",
   "require": {
+    "codexten/yii-web": "^2.0.0",
     "codexten/yii-module-auth": "^2.0.0"
   },
   "autoload": {
@@ -17,14 +18,8 @@
     "branch-alias": {
       "dev-master": "2.0.x-dev"
     },
-    "sconfig-plugin": {
-      "i18n": "config/i18n.php",
-      "adminSettings": "config/adminSettings.php",
-      "moduleAuth": [
-        "$web",
-        "config/moduleAuth.php"
-      ],
-      "migrationNamespaces": "config/migrationNamespaces.php"
+    "config-plugin": {
+      "moduleProfile": "config/moduleProfile.php"
     }
   }
 }
